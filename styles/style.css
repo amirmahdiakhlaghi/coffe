@@ -1,0 +1,240 @@
+﻿/* /////font styles ///////// */
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot');
+    src: url('../fonts/vazir.ttf') format('truetype');
+    src: url('../fonts/vazir.woff') format('woff');
+    src: url('../fonts/vazir.woff2') format('woff2');
+}
+
+html,
+body {
+    font-family: 'vazir';
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    overflow-x: hidden;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+
+/* ////////////header section /////////////// */
+
+.header {
+    width: 100%;
+    /* min-height: 50rem; */
+    background-image: url(../images/bakcground-header.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-background-overlay {
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.header-nav {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-nav>div>nav {
+    display: flex;
+}
+
+.humberger-icon {
+    display: none;
+}
+
+
+/* .header-nav>div>nav>ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+} */
+
+.menu-header-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.header-nav>div>nav>ul>li {
+    /* padding: 23px 23px; */
+    padding: 23px 23px;
+    font-size: 20px;
+    /* line-height: 4px; */
+}
+
+.header-nav>div>nav>ul>li>a {
+    color: aliceblue;
+}
+
+.header-nav>div>nav>ul>li>a:hover {
+    color: crimson;
+    transition: .3s all ease-in-out;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: flex-end;
+    width: 29%;
+}
+
+.header-logo>a>img {
+    height: 77px;
+}
+
+#nav-res-head {
+    position: absolute;
+    width: 40%;
+    right: -2px;
+    background-color: rgba(0, 0, 0, .8);
+    /* min-height: 32rem;*/
+    height: 100%;
+    border-radius: 0px 0px 0px 95px;
+    text-align: center;
+    z-index: 1;
+}
+
+#nav-res-head>li>a:hover {
+    color: crimson;
+    transition: .3s all ease-in-out;
+}
+
+.back-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.header-title {
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 21rem;
+}
+
+.header-title>div>h1>span {
+    font-size: 46px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.header-title>div>p>span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+
+/* ////////////our-story section /////////////// */
+
+#our-story {
+    padding: 100px 0px;
+}
+
+.our-story {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.our-story .st-contant {
+    width: 48%;
+    align-self: center;
+}
+
+.our-story .st-contant>h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.our-story .st-contant>div {
+    padding: 15px;
+}
+
+.our-story .st-contant>div>p {
+    text-align: center;
+    line-height: 2;
+}
+
+.our-story .st-img {
+    width: 48%;
+}
+
+.our-story .st-img>img {
+    width: 100%;
+    height: 480px;
+}
+
+
+/* ///////media queryes/////////  */
+
+@media screen and (min-width:1800px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .menu-header-list {
+        display: none;
+    }
+    .header-nav>div {
+        width: 100%;
+    }
+    .humberger-icon {
+        display: flex;
+        width: 70%;
+    }
+    .humberger-icon>img {
+        height: 83px;
+    }
+    .header-logo {
+        width: 29%;
+    }
+    /* .humberger-icon>img:focus {
+        display: none;
+    }
+    .humberger-icon>img:focus #nav-res-head {
+        display: block !important;
+    } */
+    /* #nav-res-head {
+        display: block !important;
+    } */
+}
